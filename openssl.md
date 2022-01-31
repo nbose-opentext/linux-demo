@@ -8,3 +8,6 @@ echo -n "6495f3ac36095eabcb4169d08b266c96" | xxd -p -r | openssl aes-128-ecb -d 
 - openssl rsa -in S0023615091.pem -out S0023615091.key
 
 
+openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx
+
+
